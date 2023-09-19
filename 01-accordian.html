@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordian</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+      /* #087f5b */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter" sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .accordian {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+      }
+      .number,
+      .text {
+        font-size: 24px;
+        /* color: #087f5b; */
+      }
+      .number {
+        color: #ced4da;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .hidden-box ul {
+        margin-left: 18px;
+        color: #868e96;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordian">
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">How long do i have to return my chair</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            accusamus unde alias porro quod possimus. Harum perspiciatis
+            inventore cumque cum ullam repudiandae consequuntur veritatis, quod
+            rerum quos quidem. Qui, consequuntur?
+          </p>
+          <ul>
+            <li>Harum perspiciatis inventore cumque cum ullam repudiandae</li>
+            <li>Molestiae in magni facilis quasi quas rem quia, ducimus at.</li>
+            <li>
+              Obcaecati soluta officia quam neque laboriosam, nam, est
+              voluptates
+            </li>
+            <li>
+              Sint sequi quaerat iste maiores veritatis aliquam rerum autem, sit
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="text">How long do i have to return my chair</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            accusamus unde alias porro quod possimus. Harum perspiciatis
+            inventore cumque cum ullam repudiandae consequuntur veritatis, quod
+            rerum quos quidem. Qui, consequuntur?
+          </p>
+          <ul>
+            <li>Harum perspiciatis inventore cumque cum ullam repudiandae</li>
+            <li>Molestiae in magni facilis quasi quas rem quia, ducimus at.</li>
+            <li>
+              Obcaecati soluta officia quam neque laboriosam, nam, est
+              voluptates
+            </li>
+            <li>
+              Sint sequi quaerat iste maiores veritatis aliquam rerum autem, sit
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">Do you ship to countries outside the India</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            accusamus unde alias porro quod possimus. Harum perspiciatis
+            inventore cumque cum ullam repudiandae consequuntur veritatis, quod
+            rerum quos quidem. Qui, consequuntur?
+          </p>
+          <ul>
+            <li>Harum perspiciatis inventore cumque cum ullam repudiandae</li>
+            <li>Molestiae in magni facilis quasi quas rem quia, ducimus at.</li>
+            <li>
+              Obcaecati soluta officia quam neque laboriosam, nam, est
+              voluptates
+            </li>
+            <li>
+              Sint sequi quaerat iste maiores veritatis aliquam rerum autem, sit
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
